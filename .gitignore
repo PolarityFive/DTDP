@@ -1,0 +1,16 @@
+
+.vs/DTDP/v16/.suo
+*.db
+*.opendb
+*.ipch
+*.log
+*.exe
+*.ilk
+*.pdb
+*.tlog
+*.txt
+*.obj
+*.idb
+*.iobj
+*.ipdb
+*.dll
