@@ -14,3 +14,9 @@
 *.iobj
 *.ipdb
 *.dll
+*.filters
+*.vcxproj
+*.filters
+*.filters
+*.vcxproj
+*.ttf

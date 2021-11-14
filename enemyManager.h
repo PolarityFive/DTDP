@@ -6,9 +6,9 @@
 class enemyManager
 {
 public:
-	bool hasWaveStarted;
 	int enemyCount;
+	//Possibly add enemy container
 public:
 	Enemy createEnemy();
-	void spawnEnemy();
+	void spawnEnemy(std::vector<Enemy> &enemyArray,sf::RenderWindow &win);
 };

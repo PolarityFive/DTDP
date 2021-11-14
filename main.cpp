@@ -2,8 +2,9 @@
 #include "map.h"
 #include "enemy.h"
 #include "enemyManager.h"
-#include <bits.h>
-
+#include "gameManager.h"
+#include "buttons.h"
+#include <iostream> //TODO remove.
 
 using namespace sf;
 
@@ -12,9 +13,12 @@ int main()
 {
 	RenderWindow window(VideoMode(1920, 1080), "DTDP");
 	Map *map = new Map();
+	gameManager gm;
+	Button startBut("Play", 50,1600,100); //Text, Size, Position x, Position y
+
 
 	std::vector<Enemy> enemies;
-	enemyManager enemyManager;
+	enemyManager eManager;
 	
 	while (window.isOpen())
 	{
@@ -38,12 +42,12 @@ int main()
 		window.draw(map->wbBound);
 		window.draw(map->etBound);
 		window.draw(map->ebBound);
+		startBut.initButtonBackground();
+		startBut.drawBackground(window);
+		startBut.drawButton(window);
 
-		enemies.push_back(enemyManager.createEnemy()); //loop this
-
-
-		
 		window.display();
+	
 	}
 
 	return 0;

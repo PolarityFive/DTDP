@@ -18,7 +18,7 @@ Sprite Map::getBackground()
 
 void Map::setBoundaries()
 {
-	Vector2f fullSize(1520,50);
+	Vector2f fullSize(1320,50);
 	Vector2f halfSize(((1080-200-50-200)/2), 50);
 
 	nBound.setSize(fullSize);
@@ -49,13 +49,13 @@ void Map::setBoundaries()
 	etBound.setSize(halfSize);
 	etBound.setOutlineColor(Color::Black);
 	etBound.setFillColor(Color::White);
-	etBound.setPosition(1750, 100);
+	etBound.setPosition(1550, 100);
 	etBound.setRotation(90);
 
 	ebBound.setSize(halfSize);
 	ebBound.setOutlineColor(Color::Black);
 	ebBound.setFillColor(Color::White);
-	ebBound.setPosition(1700, 980);
+	ebBound.setPosition(1500, 980);
 	ebBound.setRotation(-90);
 
 }
