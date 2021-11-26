@@ -5,7 +5,7 @@ Enemy::Enemy()
 	
 }
 
-void Enemy::setPosition()
+void Enemy::setOrigin()
 {
 	eRect.setPosition(100, 500);
 }

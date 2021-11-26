@@ -14,7 +14,7 @@ public:
 
 public:
 	Enemy();
-	void setPosition();
+	void setOrigin();
 	void setSpeed();
 	void setHp();
 };

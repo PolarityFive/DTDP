@@ -16,6 +16,15 @@
     <Filter Include="Main">
       <UniqueIdentifier>{352bf3a3-3a08-49fc-9588-b82786d7ed7b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{9caa6788-71a8-4a68-a5bf-857c558c2e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Header Files">
+      <UniqueIdentifier>{305b4a13-8457-48b7-bc6a-d86fbb0404f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Source Files">
+      <UniqueIdentifier>{54618b97-0779-4835-8cd0-5c53e22171ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="map.h">
@@ -27,11 +36,8 @@
     <ClInclude Include="enemyManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gameManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="buttons.h">
-      <Filter>Header Files</Filter>
+      <Filter>Menu\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -47,11 +53,8 @@
     <ClCompile Include="enemyManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gameManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="buttons.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Menu\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

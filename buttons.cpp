@@ -12,6 +12,7 @@ Button::Button(std::string text, int textSize,int x, int y)
 	this->y = y;
 
 }
+
 void Button::drawButton(RenderWindow& win)
 {
 	this->buttonText.setPosition(this->x,this->y);

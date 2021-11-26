@@ -2,7 +2,6 @@
 #include "map.h"
 #include "enemy.h"
 #include "enemyManager.h"
-#include "gameManager.h"
 #include "buttons.h"
 #include <iostream> //TODO remove.
 
@@ -13,7 +12,6 @@ int main()
 {
 	RenderWindow window(VideoMode(1920, 1080), "DTDP");
 	Map *map = new Map();
-	gameManager gm;
 	Button startBut("Play", 50,1600,100); //Text, Size, Position x, Position y
 
 
@@ -42,9 +40,9 @@ int main()
 		window.draw(map->wbBound);
 		window.draw(map->etBound);
 		window.draw(map->ebBound);
-		startBut.initButtonBackground();
-		startBut.drawBackground(window);
-		startBut.drawButton(window);
+
+		//enemies.push_back(eManager.createEnemy());
+		//eManager.spawnEnemy(enemies,window);
 
 		window.display();
 	
