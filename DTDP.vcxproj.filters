@@ -39,6 +39,9 @@
     <ClInclude Include="buttons.h">
       <Filter>Menu\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -55,6 +58,9 @@
     </ClCompile>
     <ClCompile Include="buttons.cpp">
       <Filter>Menu\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

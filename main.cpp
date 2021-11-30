@@ -3,6 +3,7 @@
 #include "enemy.h"
 #include "enemyManager.h"
 #include "buttons.h"
+#include "game.h"
 #include <iostream> //TODO remove.
 
 using namespace sf;
@@ -11,8 +12,11 @@ using namespace sf;
 int main()
 {
 	RenderWindow window(VideoMode(1920, 1080), "DTDP");
+	
+	Game gameManager;
 	Map *map = new Map();
 	Button startBut("Play", 50,1600,100); //Text, Size, Position x, Position y
+	
 
 
 	std::vector<Enemy> enemies;
@@ -40,11 +44,18 @@ int main()
 		window.draw(map->wbBound);
 		window.draw(map->etBound);
 		window.draw(map->ebBound);
+		if (eManager.enemyCount < 2)
+		{
+			enemies.push_back(eManager.createEnemy());
+			eManager.spawnEnemy(enemies);
+			
+		}
+		eManager.drawEnemy(enemies, window);
+		eManager.moveEnemies(enemies);
 
-		//enemies.push_back(eManager.createEnemy());
-		//eManager.spawnEnemy(enemies,window);
 
 		window.display();
+		
 	
 	}
 

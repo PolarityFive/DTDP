@@ -17,4 +17,5 @@ public:
 	void setOrigin();
 	void setSpeed();
 	void setHp();
+	void updatePosition();
 };
